@@ -5,7 +5,7 @@ var HomePage = React.createClass({
     return (
       <div>
 
-    <h1>Cheesepedia</h1>
+    <h1>Cheesepedia ! </h1>
 
       </div>
     )
