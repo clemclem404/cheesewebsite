@@ -1,31 +1,31 @@
 var React = require ('react');
 
-var Ajouter= React.createClass({
-  handleSubmit: function (e) {
+ var Ajouter= React.createClass({
+   handleSubmit: function (e) {
 
-  e.preventDefault();
-  var texteFromage = this.refs.texteFromage.value;
+   e.preventDefault();
+   var texteFromage = this.refs.texteFromage.value;
 
-  if (texteFromage.length >0 ) {
-    this.refs.texteFromage.value = '';
-    this.props.onAjouter(texteFromage);
+   if (texteFromage.length >0 ) {
+     this.refs.texteFromage.value = '';
+     this.props.onAjouter(texteFromage);
 
-  } else {
+   } else {
 
-    this.refs.texteFromage.focus();
+     this.refs.texteFromage.focus();
 
-    }
-  },
-  render: function () {
-    return (
-      <div className="container__footer">
-        <form onSubmit={this.handleSubmit}>
-          <input type="text" ref="texteFromage" placeholder="quel est le nom de votre fromage ?"/>
-          <button className="button expanded">Ajouter</button>
-        </form>
-      </div>
-    );
-  }
-});
+     }
+   },
+   render: function () {
+     return (
+       <div className="container__footer">
+         <form onSubmit={this.handleSubmit}>
+           <input type="text" ref="texteFromage" placeholder="quel est le nom de votre fromage ?"/>
+           <button className="button expanded">Ajouter</button>
+         </form>
+       </div>
+     );
+   }
+ });
 
-module.exports = Ajouter;
+ module.exports = Ajouter;

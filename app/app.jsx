@@ -4,7 +4,6 @@ var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
 
 var HomePage = require ('HomePage');
-var Navigation = require ('Navigation');
 var Repertoire = require ('Repertoire');
 var Ajouter = require ('Ajouter');
 
@@ -21,7 +20,7 @@ require('style!css!sass!applicationStyles')
 ReactDOM.render(
 <Router history = {hashHistory}>
   <Route path="/" component = {HomePage}>
-    <Route path = "Ajouter" component={Ajouter}/>
+    <Route path = "ajouter" component={Ajouter}/>
     <IndexRoute  component={Repertoire}/>
 
     </Route>

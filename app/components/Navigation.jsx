@@ -2,32 +2,27 @@ var React = require ('react');
 var {Link, IndexLink} = require ('react-router');
 
 var Navigation = React.createClass ({
-  render: function () {
-  return (
-    <div className = "top-bar">
-      <div className="top-bar-left">
-        <ul className="menu">
-        <li className="menu-text">
-          CHEESEPEDIA
-        </li>
-        <li>
-          <IndexLink to="/" activeClassName="active-link">Repertoire</IndexLink>
-        </li>
-        <li>
-          <Link to="/ajouter" activeClassName="active-link">Ajouter un fromage</Link>
-        </li>
-        </ul>
-      </div>
-      <div className="top-bar-right">
-        <ul className="menu">
-          <li className="menu-text">
-           created by <a href="https://github.com/clemclem404/cheesewebsite" target = "_blank"> Pauline </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    );
-  },
-});
+   render: function () {
+   return (
+     <div className = "top-bar">
+       <div className="top-bar-left">
+         <ul className="menu">
+         <li className="menu-text">
+           CHEESEPEDIA
+         </li>
+         
+         </ul>
+       </div>
+       <div className="top-bar-right">
+         <ul className="menu">
+           <li className="menu-text">
+            created by <a href="https://github.com/clemclem404/cheesewebsite" target = "_blank"> Pauline </a>
+           </li>
+         </ul>
+       </div>
+     </div>
+     );
+   },
+ });
 
-module.exports = Navigation;
+ module.exports = Navigation;

@@ -1,16 +1,16 @@
 var React = require ('react');
 
 var NouveauFromage = React.createClass({
-  render: function () {
+   render: function () {
 
-  var {id,fromages}= this.props;
-    return (
-      <div>
-        {fromages}
-      </div>
+   var {id,fromages}= this.props;
+     return (
+       <div>
+         {fromages}
+       </div>
 
-    )
-  }
-});
+     )
+   }
+ });
 
-module.exports = NouveauFromage;
+ module.exports = NouveauFromage;

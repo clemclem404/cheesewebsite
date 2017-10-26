@@ -26,6 +26,7 @@ plugins: [
   },
   resolve: {
     root: __dirname,
+
     modulesDirectories: [
       'node_modules',
       './app/components',
